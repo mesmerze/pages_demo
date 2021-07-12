@@ -3,7 +3,7 @@ layout: post
 title: 'HOW TO RUN THIS MONSTER'
 permalink: /how_to_run_this_monster/
 foo: Bar
-by: Alex Charnou
+author: Alex Charnou
 ---
 
 please make sure that:
