@@ -17,7 +17,6 @@ OR run
 ```markdown
 docker run -e ES_JAVA_OPTS='-Xms500m -Xmx500m' -p 9200:9200 -p 9300:9300 --volume elasticsearch_data:/usr/share/elasticsearch/data elasticsearch:5.6
 ```
-straighaway
 
 2. your `/etc/hosts` file contains changes from REAMDE.md in /app
 3. `direnv` is working on your machine (check out README.md in /app again and check [this](https://direnv.net/docs/hook.html)): your database should accept connections with the provided in the `database.yml` credentials: `ENV['DB_USERNAME']` and `ENV['DB_PASSWORD']` which should be set in `.envrc` file (`cp .envrc.example .envrc`) and without `direnv` tool it wont workout ;)
