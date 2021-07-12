@@ -8,7 +8,7 @@ author: Alex Charnou
 
 ![hoho](https://thumbs.gfycat.com/DiligentWellmadeAustraliansilkyterrier-size_restricted.gif)
 
-please make sure that:
+first of all please make sure that:
 1. your elasticsearch instance is up and running on :9200 port. Please edit `Procfile.local` in /app and comment out everything else except line with `elastic:`
 2. your `/etc/hosts` file contains changes from REAMDE.md in /app
 3. `direnv` is working on your machine (check out README.md in /app again)
