@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'HOW TO RUN THIS MONSTER'
-permalink: /how_to_run_this_monster/
+permalink: /how_to_make_this_monster_up_and_running/
 foo: Bar
 author: Alex Charnou
 ---
