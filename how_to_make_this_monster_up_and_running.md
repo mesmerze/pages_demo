@@ -9,7 +9,8 @@ author: Alex Charnou
 ![hoho](https://thumbs.gfycat.com/DiligentWellmadeAustraliansilkyterrier-size_restricted.gif)
 
 Please skip all `db:setup`, `bin/setup`, `db:seed` from /app. /devices, /cirro README.md for now. If you already pupulated the databases - drop them with `bundle exec rake db:drop`. also please make sure that:
-1. your elasticsearch instance is up and running on :9200 port: you can edit `Procfile.local` in /app - comment out everything except line with `elastic:` and run ```markdown
+1. your elasticsearch instance is up and running on :9200 port: you can edit `Procfile.local` in /app - comment out everything except line with `elastic:` and run
+ ```markdown
 foreman s -f Procfile.local
 ```
 OR run
