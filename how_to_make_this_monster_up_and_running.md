@@ -8,11 +8,10 @@ author: Alex Charnou
 
 ![hoho](https://thumbs.gfycat.com/DiligentWellmadeAustraliansilkyterrier-size_restricted.gif)
 
-first of all please make sure that:
-1. your elasticsearch instance is up and running on :9200 port. Please edit `Procfile.local` in /app and comment out everything else except line with `elastic:`
+Please skip all `db:setup`, `bin/setup`, `db:seed` from /app. /devices, /cirro README.md for now. If you already pupulated the databases - drop them with `bundle exec rake db:drop`. also please make sure that:
+1. your elasticsearch instance is up and running on :9200 port: you can edit `Procfile.local` in /app, comment out everything else except line with `elastic:` and run `foreman s -f Procfile.local` OR run `docker run -e ES_JAVA_OPTS='-Xms500m -Xmx500m' -p 9200:9200 -p 9300:9300 --volume elasticsearch_data:/usr/share/elasticsearch/data elasticsearch:5.6` straighaway
 2. your `/etc/hosts` file contains changes from REAMDE.md in /app
-3. `direnv` is working on your machine (check out README.md in /app again)
-4. your database accepts connections with provided in the `database.yml` credentials
+3. `direnv` is working on your machine (check out README.md in /app again and check [this](https://direnv.net/docs/hook.html)): your database should accept connections with the provided in the `database.yml` credentials: `ENV['DB_USERNAME']` and `ENV['DB_PASSWORD']` which should be set in `.envrc` file (`cp .envrc.example .envrc`) and without `direnv` tool it wont workout ;)
 
 also these steps require that all system requirements for /app, /devices, /cirro are met. don't forget about `budnle install` and `yarn install`
 
