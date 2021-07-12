@@ -1,7 +1,8 @@
 ---
 layout: page
-title: "HOW TO RUN THIS MONSTER"
+title: 'HOW TO RUN THIS MONSTER'
 permalink: /how_to_run_this_monster/
+foo: Bar
 ---
 
-### HOW TO RUN THIS MONSTER
+{{ page.foo }}
