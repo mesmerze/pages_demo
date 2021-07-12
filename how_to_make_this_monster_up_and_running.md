@@ -21,7 +21,7 @@ docker run -e ES_JAVA_OPTS='-Xms500m -Xmx500m' -p 9200:9200 -p 9300:9300 --volum
 2. your `/etc/hosts` file contains changes from REAMDE.md in /app
 3. `direnv` is working on your machine (check out README.md in /app again and check [this](https://direnv.net/docs/hook.html)): your database should accept connections with the provided in the `database.yml` credentials: `ENV['DB_USERNAME']` and `ENV['DB_PASSWORD']` which should be set in `.envrc` file (`cp .envrc.example .envrc`) and without `direnv` tool it wont workout ;)
 
-also these steps require that all system requirements for /app, /devices, /cirro are met (yes, README.md again ;)). don't forget about `budnle install` and `yarn install`
+also these steps require that all system requirements for /app, /devices, /cirro are met (yes, README.md again ;)). don't forget about `bundle install` and `yarn install`
 
 a first step is to populate /devices database. In order to do that you have to run
 `bundle exec rake db:setup` in /devices repo. If everything went smoothly - you'll be able to run the rails console in /devices and observe entities created for you - like `OperatingSystem.all`
