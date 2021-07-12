@@ -19,7 +19,7 @@ also these steps require that all system requirements for /app, /devices, /cirro
 a first step is to populate Devices database. In order to do that you have to run
 `bundle exec rake db:setup` in /devices repo. If everything went smoothly - you'll be able to run the rails console in /devices and observe entities created for you - like `OperatingSystem.all`
 
-a second step is to run rails server in /devices `bundle exec rails c -p 4003` AND `foreman s` in separate terminal tabs
+a second step is to run rails server in /devices `bundle exec rails s -p 4003` AND `foreman s` in separate terminal tabs
 
 a third step is to run `bundle exec rake db:setup` in /app. If everything went smoothly - you'll be able to run the rails console in /app and observe entities created for you - like `Tester.all`
 
