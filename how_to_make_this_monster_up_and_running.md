@@ -15,19 +15,19 @@ Please skip all `db:setup`, `bin/setup`, `db:seed` from /app. /devices, /cirro R
 
 also these steps require that all system requirements for /app, /devices, /cirro are met (yes, README.md again ;)). don't forget about `budnle install` and `yarn install`
 
-a first step is to populate Devices database. In order to do that you have to run
+a first step is to populate /devices database. In order to do that you have to run
 `bundle exec rake db:setup` in /devices repo. If everything went smoothly - you'll be able to run the rails console in /devices and observe entities created for you - like `OperatingSystem.all`
 
-a second step is to run rails server in /devices `bundle exec rails s -p 4003` AND `foreman s` in separate terminal tabs
+a second step is to run the Rails server in /devices `bundle exec rails s -p 4003` AND `foreman s` in separate terminal tabs
 
-a third step is to run `bundle exec rake db:setup` in /app. If everything went smoothly - you'll be able to run the rails console in /app and observe entities created for you - like `Tester.all`
+a third step is to run `bundle exec rake db:setup` in /app in order to populate database there. If everything went smoothly - you'll be able to run the rails console in /app and observe entities created for you - like `Tester.all`
 
-a fourth step is to edit `Procfile.local` back - now we need at least `sidekiq` up and running. In two separate tabs you should run `bundle exec rails s -p 4001` and `foreman s -f Procfile.local`
+a fourth step is to edit `Procfile.local` back (if you did changes there) - now we need at least `sidekiq` up and running. In two separate tabs you should run `bundle exec rails s -p 4001` and `foreman s -f Procfile.local`
 
 a fifth step is to get /cirro up and running with `bin/setup` and `foreman start` - everything in the README.md
 
-a sixth step is to migrate our users from /app to /cirro to be able to authenticate - https://github.com/test-IO/app#migrate-existing-users-to-cirro
+a sixth step is to migrate our users from /app to /cirro in order to be able to authenticate - https://github.com/test-IO/app#migrate-existing-users-to-cirro
 
 AND NOW WE ARE TALKING!
 
-you should be able to visit `tester.app.localhost:4001` -> enter credentials(in /app README.md) -> vualá
+you should be able to visit `tester.app.localhost:4001` now -> just use [credentials](https://github.com/test-IO/app#credentials) from /app README.md -> vualá
