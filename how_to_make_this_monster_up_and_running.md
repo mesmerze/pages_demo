@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'HOW TO RUN THIS MONSTER'
+title: 'How to make this monster up and running'
 permalink: /how_to_make_this_monster_up_and_running/
 foo: Bar
 author: Alex Charnou
