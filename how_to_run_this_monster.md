@@ -6,6 +6,8 @@ foo: Bar
 author: Alex Charnou
 ---
 
+![hoho](https://thumbs.gfycat.com/DiligentWellmadeAustraliansilkyterrier-size_restricted.gif)
+
 please make sure that:
 1. you elasticsearch instance is running on :9200 port. please edit `Procfile.local` in /app and comment out everything else except line with `elastic:`
 2. your /etc/hosts contains changes from REAMDE.md in /app
