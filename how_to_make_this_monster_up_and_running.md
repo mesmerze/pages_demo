@@ -30,7 +30,7 @@ a second step is to run the Rails server in /devices `bundle exec rails s -p 400
 
 a third step is to run `bundle exec rake db:setup` in /app in order to populate database there. If everything went smoothly - you'll be able to run the rails console in /app and observe entities created for you - like `Tester.all`
 
-a fourth step is to edit `Procfile.local` back (if you did changes there) - now we need at least `sidekiq` up and running. In two separate tabs you should run `bundle exec rails s -p 4001` and `foreman s -f Procfile.local`
+a fourth step is to edit `Procfile.local` back (if you did changes there) - now we need at least `sidekiq`(in addition to `elasticsearch`) up and running. In two separate tabs you should run `bundle exec rails s -p 4001` and `foreman s -f Procfile.local`
 
 a fifth step is to get /cirro up and running with `bin/setup` and `foreman start` - everything in the README.md
 
